@@ -1,0 +1,13 @@
+D:\Final year project\test projects\Autism Prediction System\bin\Debug\Autism Prediction System.exe.config
+D:\Final year project\test projects\Autism Prediction System\bin\Debug\Autism Prediction System.exe
+D:\Final year project\test projects\Autism Prediction System\bin\Debug\Autism Prediction System.pdb
+D:\Final year project\test projects\Autism Prediction System\obj\Debug\Autism Prediction System.csproj.AssemblyReference.cache
+D:\Final year project\test projects\Autism Prediction System\obj\Debug\Autism_Prediction_System.Properties.Resources.resources
+D:\Final year project\test projects\Autism Prediction System\obj\Debug\Autism Prediction System.csproj.GenerateResource.cache
+D:\Final year project\test projects\Autism Prediction System\obj\Debug\Autism Prediction System.csproj.CoreCompileInputs.cache
+D:\Final year project\test projects\Autism Prediction System\obj\Debug\Autism Prediction System.exe
+D:\Final year project\test projects\Autism Prediction System\obj\Debug\Autism Prediction System.pdb
+D:\Final year project\test projects\Autism Prediction System\obj\Debug\Autism_Prediction_System.Form1.resources
+D:\Final year project\test projects\Autism Prediction System\obj\Debug\Autism_Prediction_System.Forms.Home.resources
+D:\Final year project\test projects\Autism Prediction System\obj\Debug\Autism_Prediction_System.MainScreen.resources
+D:\Final year project\test projects\Autism Prediction System\obj\Debug\Autism_Prediction_System.Forms.QuestionPage1.resources
