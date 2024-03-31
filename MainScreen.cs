@@ -15,11 +15,9 @@ namespace Autism_Prediction_System
 
        
         public static Form activeForm ;
-        public static Form objMainScreen ;
         public MainScreen()
         {
             InitializeComponent();
-            objMainScreen = this;
         }
 
 
@@ -32,15 +30,15 @@ namespace Autism_Prediction_System
             childForm.AutoScroll = true;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            panelBody.Controls.Add(childForm);
-            panelBody.Tag = childForm;
+            obj.panelBody.Controls.Add(childForm);
+            obj.panelBody.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
 
         }
         private void Main_Load(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Home(this ),this, sender, e);
+            OpenChildForm(new Forms.Home( this ),this, sender, e);
         }
 
         private void buttonClose_Click_1(object sender, EventArgs e)

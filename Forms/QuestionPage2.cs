@@ -10,25 +10,18 @@ using System.Windows.Forms;
 
 namespace Autism_Prediction_System.Forms
 {
-    public partial class Home : Form
+    public partial class QuestionPage2 : Form
     {
         MainScreen parentForm;
-        public Home(MainScreen parentForm ) 
+        public QuestionPage2(MainScreen parentForm)
         {
             InitializeComponent();
             this.parentForm = parentForm;
         }
 
-        private void buttonStart_Click(object sender, EventArgs e)
+        private void answer1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.Close();
-            parentForm.OpenChildForm(new Forms.QuestionPage1(parentForm),parentForm,sender,e);
-            //parentForm.Close();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
+         
         }
     }
 }

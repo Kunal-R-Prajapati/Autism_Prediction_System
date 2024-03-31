@@ -58,6 +58,12 @@
     <Compile Include="Forms\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\QuestionPage2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\QuestionPage2.Designer.cs">
+      <DependentUpon>QuestionPage2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\QuestionPage1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\QuestionPage2.resx">
+      <DependentUpon>QuestionPage2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\QuestionPage1.resx">
       <DependentUpon>QuestionPage1.cs</DependentUpon>

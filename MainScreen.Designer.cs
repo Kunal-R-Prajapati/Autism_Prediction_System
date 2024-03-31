@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainScreen));
             this.panelHead = new System.Windows.Forms.Panel();
-            this.panelFooter = new System.Windows.Forms.Panel();
-            this.panelBody = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.buttonMaximize = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelBody = new System.Windows.Forms.Panel();
+            this.panelFooter = new System.Windows.Forms.Panel();
             this.panelHead.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,33 +48,6 @@
             this.panelHead.Name = "panelHead";
             this.panelHead.Size = new System.Drawing.Size(1258, 62);
             this.panelHead.TabIndex = 0;
-            // 
-            // panelFooter
-            // 
-            this.panelFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelFooter.Location = new System.Drawing.Point(0, 638);
-            this.panelFooter.Name = "panelFooter";
-            this.panelFooter.Size = new System.Drawing.Size(1258, 26);
-            this.panelFooter.TabIndex = 1;
-            // 
-            // panelBody
-            // 
-            this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelBody.Location = new System.Drawing.Point(0, 62);
-            this.panelBody.Name = "panelBody";
-            this.panelBody.Size = new System.Drawing.Size(1258, 576);
-            this.panelBody.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(468, 8);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(332, 46);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Autism Prediction";
             // 
             // buttonMaximize
             // 
@@ -104,10 +77,38 @@
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click_1);
             // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(468, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(332, 46);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Autism Prediction";
+            // 
+            // panelBody
+            // 
+            this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelBody.Location = new System.Drawing.Point(0, 62);
+            this.panelBody.Name = "panelBody";
+            this.panelBody.Size = new System.Drawing.Size(1258, 576);
+            this.panelBody.TabIndex = 2;
+            // 
+            // panelFooter
+            // 
+            this.panelFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelFooter.Location = new System.Drawing.Point(0, 638);
+            this.panelFooter.Name = "panelFooter";
+            this.panelFooter.Size = new System.Drawing.Size(1258, 26);
+            this.panelFooter.TabIndex = 1;
+            // 
             // MainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1258, 664);
             this.Controls.Add(this.panelBody);
@@ -116,6 +117,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainScreen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Autism Prediction System";
             this.Load += new System.EventHandler(this.Main_Load);
             this.panelHead.ResumeLayout(false);
@@ -127,10 +129,10 @@
         #endregion
 
         private System.Windows.Forms.Panel panelHead;
-        private System.Windows.Forms.Panel panelFooter;
         public  System.Windows.Forms.Panel panelBody;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonMaximize;
         private System.Windows.Forms.Button buttonClose;
+        private System.Windows.Forms.Panel panelFooter;
     }
 }
