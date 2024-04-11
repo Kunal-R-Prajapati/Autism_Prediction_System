@@ -12,3 +12,4 @@ D:\Final year project\test projects\Autism Prediction System\obj\Debug\Autism_Pr
 D:\Final year project\test projects\Autism Prediction System\obj\Debug\Autism_Prediction_System.MainScreen.resources
 D:\Final year project\test projects\Autism Prediction System\obj\Debug\Autism_Prediction_System.Forms.QuestionPage1.resources
 D:\Final year project\test projects\Autism Prediction System\obj\Debug\Autism_Prediction_System.Forms.QuestionPage2.resources
+D:\Final year project\test projects\Autism Prediction System\obj\Debug\Autism_Prediction_System.Forms.QuestionPage3.resources

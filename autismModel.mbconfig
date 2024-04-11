@@ -1,0 +1,859 @@
+﻿{
+  "Scenario": "Classification",
+  "DataSource": {
+    "Type": "TabularFile",
+    "Version": 1,
+    "FilePath": "D:\\Final year project\\datasets\\datasetCombined\\data.txt",
+    "Delimiter": "\t",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "A1_Score",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "A2_Score",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "A3_Score",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "A4_Score",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "A5_Score",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "A6_Score",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "A7_Score",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "A8_Score",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "A9_Score",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "A10_Score",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "age",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "gender",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "ethnicity",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "jundice",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "austim",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "contry_of_res",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "result",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "relation",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      },
+      {
+        "ColumnName": "Class/ASD",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Boolean",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 4
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 3,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeBinary",
+        "Score": 1.0,
+        "RuntimeInSeconds": 1.572,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e5",
+          "e0": {
+            "OutputColumnNames": [
+              "gender",
+              "jundice",
+              "austim",
+              "relation"
+            ],
+            "InputColumnNames": [
+              "gender",
+              "jundice",
+              "austim",
+              "relation"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "A1_Score",
+              "A2_Score",
+              "A3_Score",
+              "A4_Score",
+              "A5_Score",
+              "A6_Score",
+              "A7_Score",
+              "A8_Score",
+              "A9_Score",
+              "A10_Score",
+              "age",
+              "result"
+            ],
+            "InputColumnNames": [
+              "A1_Score",
+              "A2_Score",
+              "A3_Score",
+              "A4_Score",
+              "A5_Score",
+              "A6_Score",
+              "A7_Score",
+              "A8_Score",
+              "A9_Score",
+              "A10_Score",
+              "age",
+              "result"
+            ]
+          },
+          "e2": {
+            "InputColumnName": "ethnicity",
+            "OutputColumnName": "ethnicity"
+          },
+          "e3": {
+            "InputColumnName": "contry_of_res",
+            "OutputColumnName": "contry_of_res"
+          },
+          "e4": {
+            "InputColumnNames": [
+              "gender",
+              "jundice",
+              "austim",
+              "relation",
+              "A1_Score",
+              "A2_Score",
+              "A3_Score",
+              "A4_Score",
+              "A5_Score",
+              "A6_Score",
+              "A7_Score",
+              "A8_Score",
+              "A9_Score",
+              "A10_Score",
+              "age",
+              "result",
+              "ethnicity",
+              "contry_of_res"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 254,
+            "FeatureFraction": 1.0,
+            "LearningRate": 0.099999999999999978,
+            "LabelColumnName": "Class/ASD",
+            "FeatureColumnName": "Features"
+          },
+          "e10": {
+            "LabelColumnName": "Class/ASD",
+            "ScoreColumnName": "Score"
+          },
+          "e6": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 1.0,
+            "NumberOfTrees": 4,
+            "SubsampleFraction": 1.0,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "Class/ASD",
+            "FeatureColumnName": "Features"
+          },
+          "e7": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "Class/ASD",
+            "FeatureColumnName": "Features"
+          },
+          "e8": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "Class/ASD",
+            "FeatureColumnName": "Features"
+          },
+          "e9": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "Class/ASD",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeBinary",
+        "Score": 1.0,
+        "RuntimeInSeconds": 0.429,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e5",
+          "e0": {
+            "OutputColumnNames": [
+              "gender",
+              "jundice",
+              "austim",
+              "relation"
+            ],
+            "InputColumnNames": [
+              "gender",
+              "jundice",
+              "austim",
+              "relation"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "A1_Score",
+              "A2_Score",
+              "A3_Score",
+              "A4_Score",
+              "A5_Score",
+              "A6_Score",
+              "A7_Score",
+              "A8_Score",
+              "A9_Score",
+              "A10_Score",
+              "age",
+              "result"
+            ],
+            "InputColumnNames": [
+              "A1_Score",
+              "A2_Score",
+              "A3_Score",
+              "A4_Score",
+              "A5_Score",
+              "A6_Score",
+              "A7_Score",
+              "A8_Score",
+              "A9_Score",
+              "A10_Score",
+              "age",
+              "result"
+            ]
+          },
+          "e2": {
+            "InputColumnName": "ethnicity",
+            "OutputColumnName": "ethnicity"
+          },
+          "e3": {
+            "InputColumnName": "contry_of_res",
+            "OutputColumnName": "contry_of_res"
+          },
+          "e4": {
+            "InputColumnNames": [
+              "gender",
+              "jundice",
+              "austim",
+              "relation",
+              "A1_Score",
+              "A2_Score",
+              "A3_Score",
+              "A4_Score",
+              "A5_Score",
+              "A6_Score",
+              "A7_Score",
+              "A8_Score",
+              "A9_Score",
+              "A10_Score",
+              "age",
+              "result",
+              "ethnicity",
+              "contry_of_res"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 14,
+            "NumberOfTrees": 8,
+            "MaximumBinCountPerFeature": 122,
+            "FeatureFraction": 0.85682794912936289,
+            "LearningRate": 0.99999977667298645,
+            "LabelColumnName": "Class/ASD",
+            "FeatureColumnName": "Features"
+          },
+          "e10": {
+            "LabelColumnName": "Class/ASD",
+            "ScoreColumnName": "Score"
+          },
+          "e6": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 1.0,
+            "NumberOfTrees": 4,
+            "SubsampleFraction": 1.0,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "Class/ASD",
+            "FeatureColumnName": "Features"
+          },
+          "e7": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "Class/ASD",
+            "FeatureColumnName": "Features"
+          },
+          "e8": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "Class/ASD",
+            "FeatureColumnName": "Features"
+          },
+          "e9": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "Class/ASD",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsLogisticRegressionBinary",
+        "Score": 1.0,
+        "RuntimeInSeconds": 0.809,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e7",
+          "e0": {
+            "OutputColumnNames": [
+              "gender",
+              "jundice",
+              "austim",
+              "relation"
+            ],
+            "InputColumnNames": [
+              "gender",
+              "jundice",
+              "austim",
+              "relation"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "A1_Score",
+              "A2_Score",
+              "A3_Score",
+              "A4_Score",
+              "A5_Score",
+              "A6_Score",
+              "A7_Score",
+              "A8_Score",
+              "A9_Score",
+              "A10_Score",
+              "age",
+              "result"
+            ],
+            "InputColumnNames": [
+              "A1_Score",
+              "A2_Score",
+              "A3_Score",
+              "A4_Score",
+              "A5_Score",
+              "A6_Score",
+              "A7_Score",
+              "A8_Score",
+              "A9_Score",
+              "A10_Score",
+              "age",
+              "result"
+            ]
+          },
+          "e2": {
+            "InputColumnName": "ethnicity",
+            "OutputColumnName": "ethnicity"
+          },
+          "e3": {
+            "InputColumnName": "contry_of_res",
+            "OutputColumnName": "contry_of_res"
+          },
+          "e4": {
+            "InputColumnNames": [
+              "gender",
+              "jundice",
+              "austim",
+              "relation",
+              "A1_Score",
+              "A2_Score",
+              "A3_Score",
+              "A4_Score",
+              "A5_Score",
+              "A6_Score",
+              "A7_Score",
+              "A8_Score",
+              "A9_Score",
+              "A10_Score",
+              "age",
+              "result",
+              "ethnicity",
+              "contry_of_res"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e7": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "Class/ASD",
+            "FeatureColumnName": "Features"
+          },
+          "e10": {
+            "LabelColumnName": "Class/ASD",
+            "ScoreColumnName": "Score"
+          },
+          "e5": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "LearningRate": 0.099999999999999978,
+            "LabelColumnName": "Class/ASD",
+            "FeatureColumnName": "Features"
+          },
+          "e6": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 1.0,
+            "NumberOfTrees": 4,
+            "SubsampleFraction": 1.0,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "Class/ASD",
+            "FeatureColumnName": "Features"
+          },
+          "e8": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "Class/ASD",
+            "FeatureColumnName": "Features"
+          },
+          "e9": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "Class/ASD",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsLogisticRegressionBinary",
+        "Score": 1.0,
+        "RuntimeInSeconds": 0.706,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e7",
+          "e0": {
+            "OutputColumnNames": [
+              "gender",
+              "jundice",
+              "austim",
+              "relation"
+            ],
+            "InputColumnNames": [
+              "gender",
+              "jundice",
+              "austim",
+              "relation"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "A1_Score",
+              "A2_Score",
+              "A3_Score",
+              "A4_Score",
+              "A5_Score",
+              "A6_Score",
+              "A7_Score",
+              "A8_Score",
+              "A9_Score",
+              "A10_Score",
+              "age",
+              "result"
+            ],
+            "InputColumnNames": [
+              "A1_Score",
+              "A2_Score",
+              "A3_Score",
+              "A4_Score",
+              "A5_Score",
+              "A6_Score",
+              "A7_Score",
+              "A8_Score",
+              "A9_Score",
+              "A10_Score",
+              "age",
+              "result"
+            ]
+          },
+          "e2": {
+            "InputColumnName": "ethnicity",
+            "OutputColumnName": "ethnicity"
+          },
+          "e3": {
+            "InputColumnName": "contry_of_res",
+            "OutputColumnName": "contry_of_res"
+          },
+          "e4": {
+            "InputColumnNames": [
+              "gender",
+              "jundice",
+              "austim",
+              "relation",
+              "A1_Score",
+              "A2_Score",
+              "A3_Score",
+              "A4_Score",
+              "A5_Score",
+              "A6_Score",
+              "A7_Score",
+              "A8_Score",
+              "A9_Score",
+              "A10_Score",
+              "age",
+              "result",
+              "ethnicity",
+              "contry_of_res"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e7": {
+            "L1Regularization": 0.3212439,
+            "L2Regularization": 0.03125,
+            "LabelColumnName": "Class/ASD",
+            "FeatureColumnName": "Features"
+          },
+          "e10": {
+            "LabelColumnName": "Class/ASD",
+            "ScoreColumnName": "Score"
+          },
+          "e5": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "LearningRate": 0.099999999999999978,
+            "LabelColumnName": "Class/ASD",
+            "FeatureColumnName": "Features"
+          },
+          "e6": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 1.0,
+            "NumberOfTrees": 4,
+            "SubsampleFraction": 1.0,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "Class/ASD",
+            "FeatureColumnName": "Features"
+          },
+          "e8": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "Class/ASD",
+            "FeatureColumnName": "Features"
+          },
+          "e9": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "Class/ASD",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeBinary",
+        "Score": 1.0,
+        "RuntimeInSeconds": 0.462,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e5",
+          "e0": {
+            "OutputColumnNames": [
+              "gender",
+              "jundice",
+              "austim",
+              "relation"
+            ],
+            "InputColumnNames": [
+              "gender",
+              "jundice",
+              "austim",
+              "relation"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "A1_Score",
+              "A2_Score",
+              "A3_Score",
+              "A4_Score",
+              "A5_Score",
+              "A6_Score",
+              "A7_Score",
+              "A8_Score",
+              "A9_Score",
+              "A10_Score",
+              "age",
+              "result"
+            ],
+            "InputColumnNames": [
+              "A1_Score",
+              "A2_Score",
+              "A3_Score",
+              "A4_Score",
+              "A5_Score",
+              "A6_Score",
+              "A7_Score",
+              "A8_Score",
+              "A9_Score",
+              "A10_Score",
+              "age",
+              "result"
+            ]
+          },
+          "e2": {
+            "InputColumnName": "ethnicity",
+            "OutputColumnName": "ethnicity"
+          },
+          "e3": {
+            "InputColumnName": "contry_of_res",
+            "OutputColumnName": "contry_of_res"
+          },
+          "e4": {
+            "InputColumnNames": [
+              "gender",
+              "jundice",
+              "austim",
+              "relation",
+              "A1_Score",
+              "A2_Score",
+              "A3_Score",
+              "A4_Score",
+              "A5_Score",
+              "A6_Score",
+              "A7_Score",
+              "A8_Score",
+              "A9_Score",
+              "A10_Score",
+              "age",
+              "result",
+              "ethnicity",
+              "contry_of_res"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 27,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 525,
+            "FeatureFraction": 0.99999999,
+            "LearningRate": 0.0067985816151060639,
+            "LabelColumnName": "Class/ASD",
+            "FeatureColumnName": "Features"
+          },
+          "e10": {
+            "LabelColumnName": "Class/ASD",
+            "ScoreColumnName": "Score"
+          },
+          "e6": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 1.0,
+            "NumberOfTrees": 4,
+            "SubsampleFraction": 1.0,
+            "MaximumBinCountPerFeature": 255,
+            "FeatureFraction": 1.0,
+            "L1Regularization": 2E-10,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "Class/ASD",
+            "FeatureColumnName": "Features"
+          },
+          "e7": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "Class/ASD",
+            "FeatureColumnName": "Features"
+          },
+          "e8": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 0.1,
+            "LabelColumnName": "Class/ASD",
+            "FeatureColumnName": "Features"
+          },
+          "e9": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "Class/ASD",
+            "FeatureColumnName": "Features"
+          }
+        }
+      }
+    ],
+    "Estimators": {
+      "e0": "OneHotEncoding",
+      "e1": "ReplaceMissingValues",
+      "e2": "FeaturizeText",
+      "e3": "FeaturizeText",
+      "e4": "Concatenate",
+      "e5": "FastTreeBinary",
+      "e6": "LightGbmBinary",
+      "e7": "LbfgsLogisticRegressionBinary",
+      "e8": "SdcaLogisticRegressionBinary",
+      "e9": "FastForestBinary",
+      "e10": "Naive"
+    },
+    "Schema": "e0 * e1 * e2 * e3 * e4 * (e5 + e6 + e7 + e8 + e9 * e10)",
+    "MetricName": "Accuracy",
+    "ModelFilePath": "D:\\Final year project\\test projects\\Autism Prediction System\\autismModel.mlnet"
+  },
+  "Type": "TrainingConfig",
+  "Version": 4,
+  "TrainingOption": {
+    "Version": 1,
+    "Type": "ClassificationTrainingOption",
+    "TrainingTime": 10,
+    "LabelColumn": "Class/ASD",
+    "ValidationOption": {
+      "Version": 0,
+      "Type": "CrossValidationValidationOption",
+      "NumberOfFolds": 5
+    }
+  }
+}
