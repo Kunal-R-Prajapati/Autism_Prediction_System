@@ -1,0 +1,58 @@
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\FastTreeNative.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\LdaNative.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\CpuMathNative.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\autismModel.mlnet
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Autism Prediction System.exe.config
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Autism Prediction System.exe
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Autism Prediction System.pdb
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Microsoft.ML.Core.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Microsoft.ML.CpuMath.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Microsoft.ML.Data.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Microsoft.ML.DataView.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Microsoft.ML.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Microsoft.ML.FastTree.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Microsoft.ML.KMeansClustering.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Microsoft.ML.PCA.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Microsoft.ML.StandardTrainers.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Microsoft.ML.Transforms.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Newtonsoft.Json.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\System.Buffers.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\System.CodeDom.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\System.Collections.Immutable.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\System.Memory.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\System.Numerics.Vectors.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\System.Threading.Channels.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\System.Threading.Tasks.Extensions.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Microsoft.ML.xml
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Microsoft.ML.Core.xml
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Microsoft.ML.CpuMath.xml
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Microsoft.ML.Data.xml
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Microsoft.ML.DataView.xml
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Microsoft.ML.FastTree.xml
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Microsoft.ML.KMeansClustering.xml
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Microsoft.ML.PCA.xml
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Microsoft.ML.StandardTrainers.xml
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Microsoft.ML.Transforms.xml
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Newtonsoft.Json.xml
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\System.Buffers.xml
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\System.Collections.Immutable.xml
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\System.Memory.xml
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\System.Numerics.Vectors.xml
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\System.Threading.Channels.xml
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\System.Threading.Tasks.Extensions.xml
+D:\Final year project\test projects\Autism Prediction System\obj\x64\Debug\Autism Prediction System.csproj.AssemblyReference.cache
+D:\Final year project\test projects\Autism Prediction System\obj\x64\Debug\Autism_Prediction_System.Form1.resources
+D:\Final year project\test projects\Autism Prediction System\obj\x64\Debug\Autism_Prediction_System.Forms.Home.resources
+D:\Final year project\test projects\Autism Prediction System\obj\x64\Debug\Autism_Prediction_System.Forms.QuestionPage2.resources
+D:\Final year project\test projects\Autism Prediction System\obj\x64\Debug\Autism_Prediction_System.Forms.QuestionPage1.resources
+D:\Final year project\test projects\Autism Prediction System\obj\x64\Debug\Autism_Prediction_System.Forms.QuestionPage3.resources
+D:\Final year project\test projects\Autism Prediction System\obj\x64\Debug\Autism_Prediction_System.MainScreen.resources
+D:\Final year project\test projects\Autism Prediction System\obj\x64\Debug\Autism_Prediction_System.Properties.Resources.resources
+D:\Final year project\test projects\Autism Prediction System\obj\x64\Debug\Autism Prediction System.csproj.GenerateResource.cache
+D:\Final year project\test projects\Autism Prediction System\obj\x64\Debug\Autism Prediction System.csproj.CoreCompileInputs.cache
+D:\Final year project\test projects\Autism Prediction System\obj\x64\Debug\Autism P.B03D578D.Up2Date
+D:\Final year project\test projects\Autism Prediction System\obj\x64\Debug\Autism Prediction System.exe
+D:\Final year project\test projects\Autism Prediction System\obj\x64\Debug\Autism Prediction System.pdb
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\AutismModel2.mlnet

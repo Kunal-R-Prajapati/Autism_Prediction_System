@@ -7,17 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
- 
+using Autism_Prediction_System;
+
 namespace Autism_Prediction_System.Forms
 {
     public partial class QuestionPage1 : Form
     {
         MainScreen parentForm;
         int count;
-        public QuestionPage1(MainScreen parentForm)
+        Data data;
+        public QuestionPage1(MainScreen parentForm, ref Data data)
         {
             InitializeComponent();
             this.parentForm = parentForm;
+            this.data = data;
             count = 0;
            buttonNext.Enabled = false;
             buttonNext.BackColor = Color.FromArgb(179, 179, 179);
@@ -37,36 +40,41 @@ namespace Autism_Prediction_System.Forms
         {
             count++;
             checkNoOfQuestionsAnswered();
+            data.A1_Score = data.ConvertTo0and1(answer1.SelectedText);
         }
 
         private void answer2_SelectedIndexChanged(object sender, EventArgs e)
         {
             count++;
             checkNoOfQuestionsAnswered();
+            data.A2_Score = data.ConvertTo0and1(answer2.SelectedText);
         }
 
         private void answer3_SelectedIndexChanged(object sender, EventArgs e)
         {
             count++;
             checkNoOfQuestionsAnswered();
+            data.A3_Score = data.ConvertTo0and1(answer3.SelectedText);
         }
 
         private void answer4_SelectedIndexChanged(object sender, EventArgs e)
         {
             count++;
             checkNoOfQuestionsAnswered();
+            data.A4_Score = data.ConvertTo0and1(answer4.SelectedText);
         }
 
         private void answer5_SelectedIndexChanged(object sender, EventArgs e)
         {
             count++;
             checkNoOfQuestionsAnswered();
+            data.A5_Score = data.ConvertTo0and1(answer5.SelectedText);
         }
 
         private void buttonNext_Click(object sender, EventArgs e)
         {
             this.Close();
-            parentForm.OpenChildForm(new Forms.QuestionPage2(parentForm), parentForm, sender, e);
+            parentForm.OpenChildForm(new Forms.QuestionPage2(parentForm, ref data), parentForm, sender, e);
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
