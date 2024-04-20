@@ -8,25 +8,43 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Autism_Prediction_System;
+using Newtonsoft.Json;
+using System.IO;
 
 namespace Autism_Prediction_System.Forms
 {
-    public partial class QuestionPage1 : Form
+    public partial class QuestionPage1 : Form1
     {
         MainScreen parentForm;
         int count;
-        Data data;
-        public QuestionPage1(MainScreen parentForm, ref Data data)
+        // Data data;
+
+        public QuestionPage1(MainScreen parentForm)
         {
             InitializeComponent();
             this.parentForm = parentForm;
-            this.data = data;
+            //this.data = data;
             count = 0;
+
            buttonNext.Enabled = false;
             buttonNext.BackColor = Color.FromArgb(179, 179, 179);
             buttonNext.FlatAppearance.BorderColor = Color.FromArgb(99, 99, 99);
         }
-        private void checkNoOfQuestionsAnswered()
+        public float ConvertTo0and1(int text)
+        {
+            if (text == 0)
+            {
+                return 1F;
+            }
+            else if(text == 1) 
+            {
+                return 0F;
+            }
+            else {
+                return -1F;
+            }
+        }
+            private void checkNoOfQuestionsAnswered()
         {
             if(answer1.SelectedIndex > -1 && answer2.SelectedIndex > -1 && answer3.SelectedIndex > -1 
                 && answer4.SelectedIndex > -1 && answer5.SelectedIndex > -1 && count >= 5) {
@@ -40,41 +58,53 @@ namespace Autism_Prediction_System.Forms
         {
             count++;
             checkNoOfQuestionsAnswered();
-            data.A1_Score = data.ConvertTo0and1(answer1.SelectedText);
+           // data.A1_Score = data.ConvertTo0and1(answer1.SelectedText);
         }
 
         private void answer2_SelectedIndexChanged(object sender, EventArgs e)
         {
             count++;
             checkNoOfQuestionsAnswered();
-            data.A2_Score = data.ConvertTo0and1(answer2.SelectedText);
+           // data.A2_Score = data.ConvertTo0and1(answer2.SelectedText);
         }
 
         private void answer3_SelectedIndexChanged(object sender, EventArgs e)
         {
             count++;
             checkNoOfQuestionsAnswered();
-            data.A3_Score = data.ConvertTo0and1(answer3.SelectedText);
+           // data.A3_Score = data.ConvertTo0and1(answer3.SelectedText);
         }
 
         private void answer4_SelectedIndexChanged(object sender, EventArgs e)
         {
             count++;
             checkNoOfQuestionsAnswered();
-            data.A4_Score = data.ConvertTo0and1(answer4.SelectedText);
+           // data.A4_Score = data.ConvertTo0and1(answer4.SelectedText);
         }
 
         private void answer5_SelectedIndexChanged(object sender, EventArgs e)
         {
             count++;
             checkNoOfQuestionsAnswered();
-            data.A5_Score = data.ConvertTo0and1(answer5.SelectedText);
+            //data.A5_Score = data.ConvertTo0and1(answer5.SelectedText);
         }
 
         private void buttonNext_Click(object sender, EventArgs e)
         {
+            string dataFilePath = Path.Combine("..", "JSON", "Check.json");
+            var dataValues = new
+            {
+                A1_Score = ConvertTo0and1(answer1.SelectedIndex),
+                A2_Score = ConvertTo0and1(answer2.SelectedIndex),
+                A3_Score = ConvertTo0and1(answer3.SelectedIndex),
+                A4_Score = ConvertTo0and1(answer4.SelectedIndex),
+                A5_Score = ConvertTo0and1(answer5.SelectedIndex),
+            };
+            string json = JsonConvert.SerializeObject(dataValues, Formatting.Indented);
+            string filePath = Path.Combine("..", "JSON", "Check.json");
+            File.WriteAllText(filePath, json);
             this.Close();
-            parentForm.OpenChildForm(new Forms.QuestionPage2(parentForm, ref data), parentForm, sender, e);
+            parentForm.OpenChildForm(new Forms.QuestionPage2(parentForm), parentForm, sender, e);
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

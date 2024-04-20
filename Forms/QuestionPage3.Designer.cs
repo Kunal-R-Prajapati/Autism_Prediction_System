@@ -210,9 +210,11 @@
             // answerContryOfRes
             // 
             this.answerContryOfRes.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.answerContryOfRes.DropDownHeight = 150;
             this.answerContryOfRes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.answerContryOfRes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answerContryOfRes.FormattingEnabled = true;
+            this.answerContryOfRes.IntegralHeight = false;
             this.answerContryOfRes.Items.AddRange(new object[] {
             "Afghanistan",
             "AmericanSamoa",
@@ -281,13 +283,7 @@
             "United States",
             "Uruguay",
             "Viet Nam",
-            "Other",
-            "?",
-            "",
-            "",
-            "",
-            "",
-            ""});
+            "Other"});
             this.answerContryOfRes.Location = new System.Drawing.Point(866, 182);
             this.answerContryOfRes.Name = "answerContryOfRes";
             this.answerContryOfRes.Size = new System.Drawing.Size(298, 48);

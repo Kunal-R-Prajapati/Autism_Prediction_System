@@ -14,18 +14,17 @@ namespace Autism_Prediction_System.Forms
     public partial class Home : Form
     {
         MainScreen parentForm;
-        Data data;
-        public Home(MainScreen parentForm ,ref Data data) 
+       // public Data data { get; set; }
+        public Home(MainScreen parentForm ) 
         {
             InitializeComponent();
-            this.data = data;
             this.parentForm = parentForm;
         }
 
         private void buttonStart_Click(object sender, EventArgs e)
         {
             this.Close();
-            parentForm.OpenChildForm(new Forms.QuestionPage1(parentForm, ref data),parentForm,sender,e);
+            parentForm.OpenChildForm(new Forms.QuestionPage1(parentForm),parentForm,sender,e);
             //parentForm.Close();
         }
 

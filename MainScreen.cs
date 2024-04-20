@@ -15,12 +15,13 @@ namespace Autism_Prediction_System
 
        
         public static Form activeForm ;
-        private Data data;
+        //private Datae data;
+        public Data2 data ;
 
         public MainScreen()
         {
             InitializeComponent();
-            data = new Data();
+            data = new Data2();
         }
 
 
@@ -28,6 +29,7 @@ namespace Autism_Prediction_System
         {
             if (activeForm != null)
                 activeForm.Close();
+                //childForm.data = activeForm.data; 
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.AutoScroll = true;
@@ -35,13 +37,14 @@ namespace Autism_Prediction_System
             childForm.Dock = DockStyle.Fill;
             obj.panelBody.Controls.Add(childForm);
             obj.panelBody.Tag = childForm;
+       
             childForm.BringToFront();
             childForm.Show();
 
         }
         private void Main_Load(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Home( this, ref data ),this, sender, e);
+            OpenChildForm(new Forms.Home( this ),this, sender, e);
             //OpenChildForm(new Forms.QuestionPage3(this),this,sender,e);
         }
 

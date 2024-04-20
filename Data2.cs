@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Autism_Prediction_System
 {
-    public class Data
+    public class Data2
     {
         public float A1_Score { get; set; }
         public float A2_Score { get; set; }
