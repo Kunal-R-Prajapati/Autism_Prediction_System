@@ -13,7 +13,7 @@ using System.IO;
 
 namespace Autism_Prediction_System.Forms
 {
-    public partial class QuestionPage1 : Form1
+    public partial class QuestionPage1 : Form
     {
         MainScreen parentForm;
         int count;
@@ -91,7 +91,7 @@ namespace Autism_Prediction_System.Forms
 
         private void buttonNext_Click(object sender, EventArgs e)
         {
-            string dataFilePath = Path.Combine("..", "JSON", "Check.json");
+            string dataFilePath = Path.Combine(".", "JSON", "Check.json");
             var dataValues = new
             {
                 A1_Score = ConvertTo0and1(answer1.SelectedIndex),
@@ -101,7 +101,7 @@ namespace Autism_Prediction_System.Forms
                 A5_Score = ConvertTo0and1(answer5.SelectedIndex),
             };
             string json = JsonConvert.SerializeObject(dataValues, Formatting.Indented);
-            string filePath = Path.Combine("..", "JSON", "Check.json");
+            string filePath = Path.Combine(".", "JSON", "Check.json");
             File.WriteAllText(filePath, json);
             this.Close();
             parentForm.OpenChildForm(new Forms.QuestionPage2(parentForm), parentForm, sender, e);

@@ -375,6 +375,96 @@
             <param name="u">The input integer</param>
             <returns></returns>
         </member>
+        <member name="M:Microsoft.ML.Internal.CpuMath.CpuMathUtils.Add(System.Single,System.Span{System.Single})">
+            <summary>
+            Adds a value to a destination.
+            </summary>
+            <param name="value">The value to add.</param>
+            <param name="destination">The destination to add the value to.</param>
+        </member>
+        <member name="M:Microsoft.ML.Internal.CpuMath.CpuMathUtils.Scale(System.Single,System.Span{System.Single})">
+            <summary>
+            Scales a value to a destination.
+            </summary>
+            <param name="value">The value to add.</param>
+            <param name="destination">The destination to add the value to.</param>
+        </member>
+        <member name="M:Microsoft.ML.Internal.CpuMath.CpuMathUtils.Scale(System.Single,System.ReadOnlySpan{System.Single},System.Span{System.Single},System.Int32)">
+            <summary>
+            Scales a values by a source to a destination.
+            destination = value * source
+            </summary>
+            <param name="value">The value to scale by.</param>
+            <param name="source">The source values.</param>
+            <param name="destination">The destination.</param>
+            <param name="count">The count of items.</param>
+        </member>
+        <member name="M:Microsoft.ML.Internal.CpuMath.CpuMathUtils.AddScale(System.Single,System.ReadOnlySpan{System.Single},System.Span{System.Single},System.Int32)">
+            <summary>
+            Add to the destination from the source by scale.
+            </summary>
+            <param name="scale">The scale to add by.</param>
+            <param name="source">The source values.</param>
+            <param name="destination">The destination values.</param>
+            <param name="count">The count of items.</param>
+        </member>
+        <member name="M:Microsoft.ML.Internal.CpuMath.CpuMathUtils.AddScaleCopy(System.Single,System.ReadOnlySpan{System.Single},System.ReadOnlySpan{System.Single},System.Span{System.Single},System.Int32)">
+            <summary>
+            Add to the destination by scale and source into a new result.
+            </summary>
+            <param name="scale">The scale to add by.</param>
+            <param name="source">The source values.</param>
+            <param name="destination">The destination values.</param>
+            <param name="result">A new collection of values to be returned.</param>
+            <param name="count">The count of items.</param>
+        </member>
+        <member name="M:Microsoft.ML.Internal.CpuMath.CpuMathUtils.Add(System.ReadOnlySpan{System.Single},System.Span{System.Single},System.Int32)">
+            <summary>
+            Add from a source to a destination.
+            </summary>
+            <param name="source">The source values.</param>
+            <param name="destination">The destination values.</param>
+            <param name="count">The count of items.</param>
+        </member>
+        <member name="M:Microsoft.ML.Internal.CpuMath.CpuMathUtils.MulElementWise(System.ReadOnlySpan{System.Single},System.ReadOnlySpan{System.Single},System.Span{System.Single},System.Int32)">
+            <summary>
+            Multiply each element with left and right elements.
+            </summary>
+            <param name="left">The left element.</param>
+            <param name="right">The right element.</param>
+            <param name="destination">The destination values.</param>
+            <param name="count">The count of items.</param>
+        </member>
+        <member name="M:Microsoft.ML.Internal.CpuMath.CpuMathUtils.Sum(System.ReadOnlySpan{System.Single})">
+            <summary>
+            Sum the values in the source.
+            </summary>
+            <param name="source">The source values.</param>
+            <returns>The sum of all items in <paramref name="source"/>.</returns>
+        </member>
+        <member name="M:Microsoft.ML.Internal.CpuMath.CpuMathUtils.SumSq(System.ReadOnlySpan{System.Single})">
+            <summary>
+            Sum the squares of each item in the source.
+            </summary>
+            <param name="source">The source values.</param>
+            <returns>The sum of the squares of all items in <paramref name="source"/>.</returns>
+        </member>
+        <member name="M:Microsoft.ML.Internal.CpuMath.CpuMathUtils.SumAbs(System.ReadOnlySpan{System.Single})">
+            <summary>
+            Sum the absolute value of each item in the source.
+            </summary>
+            <param name="source">The source values.</param>
+            <returns>The sum of all absolute value of the items in <paramref name="source"/>.</returns>
+        </member>
+        <member name="M:Microsoft.ML.Internal.CpuMath.CpuMathUtils.DotProductDense(System.ReadOnlySpan{System.Single},System.ReadOnlySpan{System.Single},System.Int32)">
+            <summary>
+            Returns the dot product of each item in the left and right spans.
+            </summary>
+            <param name="left">The left span.</param>
+            <param name="right">The right span.</param>
+            <param name="count">The count of items.</param>
+            <returns>The dot product.</returns>
+        </member>
         <member name="M:Microsoft.ML.Internal.CpuMath.CpuMathUtils.Compat(Microsoft.ML.Internal.CpuMath.AlignedArray)">
             <summary>
             

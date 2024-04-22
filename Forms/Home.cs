@@ -32,5 +32,7 @@ namespace Autism_Prediction_System.Forms
         {
             Application.Exit();
         }
+
+        
     }
 }

@@ -44,7 +44,8 @@ namespace Autism_Prediction_System
         }
         private void Main_Load(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Home( this ),this, sender, e);
+            OpenChildForm(new Forms.Home(this), this, sender, e);
+            //OpenChildForm(new Forms.Form1(this), this, sender, e);
             //OpenChildForm(new Forms.QuestionPage3(this),this,sender,e);
         }
 

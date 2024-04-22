@@ -571,6 +571,11 @@
             <returns>The value stored at that index, or if this is a sparse vector where this is an implicit
             entry, the default value for <typeparamref name="T"/>.</returns>
         </member>
+        <member name="M:Microsoft.ML.Data.VBuffer`1.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the values in VBuffer.
+            </summary>
+        </member>
         <member name="M:Microsoft.ML.Data.VBuffer`1.Items(`0[],System.Int32[],System.Int32,System.Int32,System.Boolean)">
             <summary>
             A helper method that gives us an iterable over the items given the fields from a <see cref="T:Microsoft.ML.Data.VBuffer`1"/>.

@@ -11121,7 +11121,7 @@
         </member>
         <member name="P:Microsoft.ML.BinaryClassificationCatalog.Calibrators">
             <summary>
-            The list of trainers for performing binary classification.
+            The list of calibrators for performing binary classification.
             </summary>
         </member>
         <member name="T:Microsoft.ML.BinaryClassificationCatalog.CalibratorsCatalog">

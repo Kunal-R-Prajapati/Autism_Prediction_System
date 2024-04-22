@@ -1613,6 +1613,21 @@
             and <see cref="T:Microsoft.ML.Transforms.Text.NgramHashExtractingTransformer"/>.
             </summary>
         </member>
+        <member name="M:Microsoft.ML.Transforms.Text.WordBagBuildingTransformer.TextExpandingTransformer.#ctor(Microsoft.ML.Runtime.IHostEnvironment,Microsoft.ML.ModelLoadContext)">
+            <summary>
+            Factory method for SignatureLoadModel.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.Text.WordBagBuildingTransformer.TextExpandingTransformer.Create(Microsoft.ML.Runtime.IHostEnvironment,Microsoft.ML.ModelLoadContext,Microsoft.ML.DataViewSchema)">
+            <summary>
+            Factory method for SignatureLoadRowMapper.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.Transforms.Text.WordBagBuildingTransformer.TextExpandingTransformer.Create(Microsoft.ML.Runtime.IHostEnvironment,Microsoft.ML.ModelLoadContext,Microsoft.ML.IDataView)">
+            <summary>
+            Factory method for SignatureLoadDataTransform.
+            </summary>
+        </member>
         <member name="T:Microsoft.ML.Transforms.Text.NgramExtractorTransform">
             <summary>
             A transform that turns a collection of tokenized text (vector of ReadOnlyMemory), or vectors of keys into numerical
@@ -2019,7 +2034,7 @@
             The weighting criteria.
             </summary>
         </member>
-        <member name="M:Microsoft.ML.Transforms.Text.WordBagEstimator.#ctor(Microsoft.ML.Runtime.IHostEnvironment,System.String,System.String,System.Int32,System.Int32,System.Boolean,System.Int32,Microsoft.ML.Transforms.Text.NgramExtractingEstimator.WeightingCriteria)">
+        <member name="M:Microsoft.ML.Transforms.Text.WordBagEstimator.#ctor(Microsoft.ML.Runtime.IHostEnvironment,System.String,System.String,System.Int32,System.Int32,System.Boolean,System.Int32,Microsoft.ML.Transforms.Text.NgramExtractingEstimator.WeightingCriteria,System.Char,System.Char)">
             <summary>
             Produces a bag of counts of n-grams (sequences of consecutive words) in <paramref name="inputColumnName"/>
             and outputs bag of word vector as <paramref name="outputColumnName"/>
@@ -2032,8 +2047,10 @@
             <param name="useAllLengths">Whether to include all n-gram lengths up to <paramref name="ngramLength"/> or only <paramref name="ngramLength"/>.</param>
             <param name="maximumNgramsCount">Maximum number of n-grams to store in the dictionary.</param>
             <param name="weighting">Statistical measure used to evaluate how important a word is to a document in a corpus.</param>
+            <param name="termSeparator">Separator used to separate terms/frequency pairs.</param>
+            <param name="freqSeparator">Separator used to separate terms from their frequency.</param>
         </member>
-        <member name="M:Microsoft.ML.Transforms.Text.WordBagEstimator.#ctor(Microsoft.ML.Runtime.IHostEnvironment,System.String,System.String[],System.Int32,System.Int32,System.Boolean,System.Int32,Microsoft.ML.Transforms.Text.NgramExtractingEstimator.WeightingCriteria)">
+        <member name="M:Microsoft.ML.Transforms.Text.WordBagEstimator.#ctor(Microsoft.ML.Runtime.IHostEnvironment,System.String,System.String[],System.Int32,System.Int32,System.Boolean,System.Int32,Microsoft.ML.Transforms.Text.NgramExtractingEstimator.WeightingCriteria,System.Char,System.Char)">
             <summary>
             Produces a bag of counts of n-grams (sequences of consecutive words) in <paramref name="inputColumnNames"/>
             and outputs bag of word vector as <paramref name="outputColumnName"/>
@@ -2046,8 +2063,10 @@
             <param name="useAllLengths">Whether to include all n-gram lengths up to <paramref name="ngramLength"/> or only <paramref name="ngramLength"/>.</param>
             <param name="maximumNgramsCount">Maximum number of n-grams to store in the dictionary.</param>
             <param name="weighting">Statistical measure used to evaluate how important a word is to a document in a corpus.</param>
+            <param name="termSeparator">Separator used to separate terms/frequency pairs.</param>
+            <param name="freqSeparator">Separator used to separate terms from their frequency.</param>
         </member>
-        <member name="M:Microsoft.ML.Transforms.Text.WordBagEstimator.#ctor(Microsoft.ML.Runtime.IHostEnvironment,System.ValueTuple{System.String,System.String[]}[],System.Int32,System.Int32,System.Boolean,System.Int32,Microsoft.ML.Transforms.Text.NgramExtractingEstimator.WeightingCriteria)">
+        <member name="M:Microsoft.ML.Transforms.Text.WordBagEstimator.#ctor(Microsoft.ML.Runtime.IHostEnvironment,System.ValueTuple{System.String,System.String[]}[],System.Int32,System.Int32,System.Boolean,System.Int32,Microsoft.ML.Transforms.Text.NgramExtractingEstimator.WeightingCriteria,System.Char,System.Char)">
             <summary>
             Produces a bag of counts of n-grams (sequences of consecutive words) in <paramref name="columns.inputs.inputs"/>
             and outputs bag of word vector for each output in <paramref name="columns.output.output"/>
@@ -2059,6 +2078,8 @@
             <param name="useAllLengths">Whether to include all n-gram lengths up to <paramref name="ngramLength"/> or only <paramref name="ngramLength"/>.</param>
             <param name="maximumNgramsCount">Maximum number of n-grams to store in the dictionary.</param>
             <param name="weighting">Statistical measure used to evaluate how important a word is to a document in a corpus.</param>
+            <param name="termSeparator">Separator used to separate terms/frequency pairs.</param>
+            <param name="freqSeparator">Separator used to separate terms from their frequency.</param>
         </member>
         <member name="M:Microsoft.ML.Transforms.Text.WordBagEstimator.Fit(Microsoft.ML.IDataView)">
             <summary> Trains and returns a <see cref="T:Microsoft.ML.ITransformer"/>.</summary>
@@ -3749,7 +3770,7 @@
              |True |4,0 |
              |False|0,5 |
              |True |4,0 |
-             |False|0,5 |
+             |False|0,0 |
             
              Check the See Also section for links to usage examples.
              ]]></format>
@@ -7555,6 +7576,24 @@
             <param name="useAllLengths">Whether to include all n-gram lengths up to <paramref name="ngramLength"/> or only <paramref name="ngramLength"/>.</param>
             <param name="maximumNgramsCount">Maximum number of n-grams to store in the dictionary.</param>
             <param name="weighting">Statistical measure used to evaluate how important a word is to a document in a corpus.</param>
+        </member>
+        <member name="M:Microsoft.ML.TextCatalog.ProduceWordBags(Microsoft.ML.TransformsCatalog.TextTransforms,System.String,System.Char,System.Char,System.String,System.Int32)">
+            <summary>
+            Create a <see cref="T:Microsoft.ML.Transforms.Text.WordBagEstimator"/>, which maps the column specified in <paramref name="inputColumnName"/>
+            to a vector of n-gram counts in a new column named <paramref name="outputColumnName"/>.
+            </summary>
+            <remarks>
+            <see cref="T:Microsoft.ML.Transforms.Text.WordBagEstimator"/> is different from <see cref="T:Microsoft.ML.Transforms.Text.NgramExtractingEstimator"/> in that the former
+            tokenizes text internally and the latter takes tokenized text as input.
+            </remarks>
+            <param name="catalog">The transform's catalog.</param>
+            <param name="outputColumnName">Name of the column resulting from the transformation of <paramref name="inputColumnName"/>.
+            This column's data type will be known-size vector of <see cref="T:System.Single"/>.</param>
+            <param name="inputColumnName">Name of the column to take the data from.
+            <param name="maximumNgramsCount">Maximum number of n-grams to store in the dictionary.</param>
+            <param name="termSeparator">Separator used to separate terms/frequency pairs.</param>
+            <param name="freqSeparator">Separator used to separate terms from their frequency.</param>
+            This estimator operates over vector of text.</param>
         </member>
         <member name="M:Microsoft.ML.TextCatalog.ProduceWordBags(Microsoft.ML.TransformsCatalog.TextTransforms,System.String,System.String[],System.Int32,System.Int32,System.Boolean,System.Int32,Microsoft.ML.Transforms.Text.NgramExtractingEstimator.WeightingCriteria)">
             <summary>

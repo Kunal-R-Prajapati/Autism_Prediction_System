@@ -56,4 +56,14 @@ D:\Final year project\test projects\Autism Prediction System\obj\x64\Debug\Autis
 D:\Final year project\test projects\Autism Prediction System\obj\x64\Debug\Autism Prediction System.exe
 D:\Final year project\test projects\Autism Prediction System\obj\x64\Debug\Autism Prediction System.pdb
 D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\AutismModel2.mlnet
-D:\Final year project\test projects\Autism Prediction System\obj\x64\Debug\Autism_Prediction_System.Forms.Fields.resources
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\CircularProgressBar.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\WinFormAnimation.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\CircularProgressBar.xml
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\WinFormAnimation.xml
+D:\Final year project\test projects\Autism Prediction System\obj\x64\Debug\Autism_Prediction_System.Forms.Form1.resources
+D:\Final year project\test projects\Autism Prediction System\obj\x64\Debug\Autism_Prediction_System.Forms.Result.resources
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Microsoft.Bcl.Numerics.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\System.Numerics.Tensors.dll
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\Microsoft.Bcl.Numerics.xml
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\System.CodeDom.xml
+D:\Final year project\test projects\Autism Prediction System\bin\x64\Debug\System.Numerics.Tensors.xml

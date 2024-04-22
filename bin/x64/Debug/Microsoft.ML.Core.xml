@@ -4235,6 +4235,92 @@
             <param name="supportIncrementalTrain">The value for the property <see cref="P:Microsoft.ML.TrainerInfo.SupportsIncrementalTraining"/></param>
             <param name="supportTest">The value for the property <see cref="P:Microsoft.ML.TrainerInfo.SupportsTest"/></param>
         </member>
+        <member name="T:Microsoft.ML.SearchSpace.BooleanChoiceAttribute">
+            <summary>
+            Boolean choice attribute
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.SearchSpace.BooleanChoiceAttribute.#ctor">
+            <summary>
+            Create a <see cref="T:Microsoft.ML.SearchSpace.BooleanChoiceAttribute"/>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.SearchSpace.BooleanChoiceAttribute.#ctor(System.Boolean)">
+            <summary>
+            Create a <see cref="T:Microsoft.ML.SearchSpace.BooleanChoiceAttribute"/> with default value.
+            </summary>
+            <param name="defaultValue">default value for this option.</param>
+        </member>
+        <member name="T:Microsoft.ML.SearchSpace.ChoiceAttribute">
+            <summary>
+            Choice attribute
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.SearchSpace.ChoiceAttribute.#ctor(System.Object[])">
+            <summary>
+            Create a <see cref="T:Microsoft.ML.SearchSpace.ChoiceAttribute"/> with <paramref name="candidates"/>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.SearchSpace.ChoiceAttribute.#ctor(System.Object[],System.Object)">
+            <summary>
+            Create a <see cref="T:Microsoft.ML.SearchSpace.ChoiceAttribute"/> with <paramref name="candidates"/> and <paramref name="defaultValue"/>.
+            </summary>
+        </member>
+        <member name="P:Microsoft.ML.SearchSpace.ChoiceAttribute.Candidates">
+            <summary>
+            Get the candidates of this option.
+            </summary>
+        </member>
+        <member name="P:Microsoft.ML.SearchSpace.ChoiceAttribute.DefaultValue">
+            <summary>
+            Get the default value of this option.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.SearchSpace.NestOptionAttribute">
+            <summary>
+            attribution class for nest option.
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.SearchSpace.NestOptionAttribute.#ctor">
+            <summary>
+            Create an <see cref="T:Microsoft.ML.SearchSpace.NestOptionAttribute"/>.
+            </summary>
+        </member>
+        <member name="T:Microsoft.ML.SearchSpace.RangeAttribute">
+            <summary>
+            Range attribute
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.SearchSpace.RangeAttribute.#ctor(System.Double,System.Double,System.Boolean)">
+            <summary>
+            Create a <see cref="T:Microsoft.ML.SearchSpace.RangeAttribute"/>
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.SearchSpace.RangeAttribute.#ctor(System.Double,System.Double,System.Double,System.Boolean)">
+            <summary>
+            Create a <see cref="T:Microsoft.ML.SearchSpace.RangeAttribute"/>
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.SearchSpace.RangeAttribute.#ctor(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Create a <see cref="T:Microsoft.ML.SearchSpace.RangeAttribute"/>
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.SearchSpace.RangeAttribute.#ctor(System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Create a <see cref="T:Microsoft.ML.SearchSpace.RangeAttribute"/>
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.SearchSpace.RangeAttribute.#ctor(System.Single,System.Single,System.Boolean)">
+            <summary>
+            Create a <see cref="T:Microsoft.ML.SearchSpace.RangeAttribute"/>
+            </summary>
+        </member>
+        <member name="M:Microsoft.ML.SearchSpace.RangeAttribute.#ctor(System.Single,System.Single,System.Single,System.Boolean)">
+            <summary>
+            Create a <see cref="T:Microsoft.ML.SearchSpace.RangeAttribute"/>
+            </summary>
+        </member>
         <member name="M:Microsoft.ML.Internal.Utilities.ArrayUtils.TryFindIndexSorted(System.Int32[],System.Int32,System.Int32,System.Int32,System.Int32@)">
             <summary>
             Akin to <c>FindIndexSorted</c>, except stores the found index in the output
@@ -6184,7 +6270,7 @@
             downloaded, and an exception if one was thrown.
             </summary>
             <remarks>
-            The function <see cref="M:Microsoft.ML.Internal.Utilities.ResourceManagerUtils.DownloadResource(Microsoft.ML.Runtime.IHostEnvironment,Microsoft.ML.Runtime.IChannel,System.Net.WebClient,System.Uri,System.String,System.String,System.Threading.CancellationToken)"/> checks whether or not the absolute URL with the
+            The function <see cref="M:Microsoft.ML.Internal.Utilities.ResourceManagerUtils.DownloadResource(Microsoft.ML.Runtime.IHostEnvironment,Microsoft.ML.Runtime.IChannel,System.Net.Http.HttpClient,System.Uri,System.String,System.String,System.Threading.CancellationToken)"/> checks whether or not the absolute URL with the
             default host "aka.ms" formed from <paramref name="relativeUrl"/> redirects to the default Microsoft homepage.
             As such, only absolute URLs with the host "aka.ms" is supported with <see cref="M:Microsoft.ML.Internal.Utilities.ResourceManagerUtils.EnsureResourceAsync(Microsoft.ML.Runtime.IHostEnvironment,Microsoft.ML.Runtime.IChannel,System.String,System.String,System.String,System.Int32)"/>.
             </remarks>

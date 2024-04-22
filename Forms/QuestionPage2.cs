@@ -89,7 +89,7 @@ namespace Autism_Prediction_System.Forms
         }
         private void updateJson()
         {
-            string dataFilePath = Path.Combine("..", "JSON", "Check.json");
+            string dataFilePath = Path.Combine(".", "JSON", "Check.json");
             // Read existing JSON data from the file
             string jsonData = File.ReadAllText(dataFilePath);
             JObject jsonObject = JObject.Parse(jsonData);
