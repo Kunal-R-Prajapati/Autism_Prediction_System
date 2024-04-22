@@ -15,6 +15,28 @@ namespace Autism_Prediction_System
         public Form1()
         {
             InitializeComponent();
+            progressBar1.Value = 0;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if(progressBar1.Value <100) {
+                progressBar1.Value += 1;
+            }
+           
+            else {
+
+                timer1.Enabled = false;
+                Task.Delay(500);
+                this.Hide();
+                MainScreen mainScreen = new MainScreen();
+                mainScreen.Show();
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

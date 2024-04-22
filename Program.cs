@@ -15,8 +15,8 @@ namespace Autism_Prediction_System
         static void Main()
         {
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainScreen());
+            Application.SetCompatibleTextRenderingDefault(true);
+            Application.Run(new Form1());
         }
     }
 }
